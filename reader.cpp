@@ -11,7 +11,7 @@ bool isDigit(cv::Mat plate, std::vector<cv::Point> object);
 //MAIN
 int main() {
 	
-	cv::Mat img = cv::imread("images/plate1.jpg");
+	cv::Mat img = cv::imread("images/carimg/plate1.jpg");
 	cv::Mat plate = findPlate(img);
 
 	cv::imshow("plate", plate);
@@ -60,16 +60,16 @@ void getDigits(const cv::Mat& plateImg, int arr[N]) {
 	
   cv::Mat digits[10];
 
-	digits[0] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/0.jpg");
-	digits[1] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/1.jpg");
-	digits[2] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/2.jpg");
-	digits[3] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/3.jpg");
-	digits[4] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/4.jpg");
-	digits[5] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/5.jpg");
-	digits[6] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/6.jpg");
-	digits[7] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/7.jpg");
-	digits[8] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/8.jpg");
-	digits[9] = cv::imread("C:/Users/USER_PC/source/repos/Project2/Project2/x64/Debug/9.jpg");
+	digits[0] = cv::imread("images/digimg/0.jpg");
+	digits[1] = cv::imread("images/digimg/1.jpg");
+	digits[2] = cv::imread("images/digimg/2.jpg");
+	digits[3] = cv::imread("images/digimg/3.jpg");
+	digits[4] = cv::imread("images/digimg/4.jpg");
+	digits[5] = cv::imread("images/digimg/5.jpg");
+	digits[6] = cv::imread("images/digimg/6.jpg");
+	digits[7] = cv::imread("images/digimg/7.jpg");
+	digits[8] = cv::imread("images/digimg/8.jpg");
+	digits[9] = cv::imread("images/digimg/9.jpg");
 
 	cv::Mat gray1, bw1;
 	std::vector<std::vector<cv::Point>> digitContours[10];
